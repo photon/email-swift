@@ -1,0 +1,36 @@
+{
+    "name": "photon/email-swift",
+    "type": "library",
+    "description": "Wrapper for the swiftmailer library",
+    "keywords": [
+        "photon",
+        "email",
+        "swift"
+    ],
+    "homepage": "http://www.photon-project.com/",
+    "license": "LGPL-2.1",
+    "authors": [
+        {
+            "name": "William MARTIN",
+            "email": "william.martin@power-lan.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Community",
+            "homepage": "https://github.com/photon/email-swift/blob/master/CONTRIBUTORS.md"
+        }
+    ],
+    "require": {
+        "php" : "^7.0",
+        "photon/photon": "^2.0",
+        "swiftmailer/swiftmailer": "^6.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "photon\\mail\\swiftmailer\\": "src/"
+        }
+    }
+}

@@ -71,4 +71,15 @@ class Mailer extends \Swift_Mailer
 
     parent::__construct($smtp);
   }
+
+  public function testConnection()
+  {
+    $transport = $this->getTransport();
+    try {
+      $transport->start();
+      return true;
+    } catch (\Swift_TransportException $e) {
+      return false;
+    }
+  }
 }
